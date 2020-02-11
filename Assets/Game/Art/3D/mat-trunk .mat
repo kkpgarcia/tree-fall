@@ -86,7 +86,7 @@ Material:
     - _FogYStartPos: 0
     - _GSpace: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0
     - _GlossyReflections: 1
     - _GradSettings_B: 0
     - _GradSettings_D: 0

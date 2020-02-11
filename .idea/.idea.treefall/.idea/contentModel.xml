@@ -43,6 +43,8 @@
               <e p="States" t="Include">
                 <e p="GameInitializeState.cs" t="Include" />
                 <e p="GameState.cs" t="Include" />
+                <e p="InteractionState.cs" t="Include" />
+                <e p="TreeFallState.cs" t="Include" />
               </e>
               <e p="TrunkController.cs" t="Include" />
             </e>

@@ -4,17 +4,6 @@ using UnityEngine.Events;
 public class GameInitializeState : GameState {
     public override void Enter() {
         InitializeLevel();
-        
-        this.AddObserver(OnTestInteraction, "TestInteraction");
-    }
-
-    public void OnDestroy() {
-        this.RemoveObserver(OnTestInteraction, "TestInteraction");
-    }
-    
-
-    private void OnTestInteraction(object sender, object args) {
-        this.TrunkController.RemoveNextTrunk(InitializeLevel);
     }
 
     private void InitializeLevel() {
@@ -25,6 +14,7 @@ public class GameInitializeState : GameState {
             this.PostNotification(CameraRig.OnMoveNotification, new InfoEventArgs<Vector3, UnityAction>(trunkPos,
                 () => {
                     TrunkController.ShowLevel();
+                    this.Owner.ChangeState<InteractionState>();
                 }));
         });
     }

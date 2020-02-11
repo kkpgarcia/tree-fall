@@ -97,63 +97,8 @@ MonoBehaviour:
     type: 3}
   Parent: {fileID: 7787240666269193254}
   YIncrement: 7
-  PopupAnimation:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 9.050542
-      outSlope: 9.050542
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.25149292
-    - serializedVersion: 3
-      time: 0.4181978
-      value: 1.2396458
-      inSlope: 0.11502232
-      outSlope: 0.11502232
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.57859236
-    - serializedVersion: 3
-      time: 1.0168915
-      value: 1
-      inSlope: -0.81249213
-      outSlope: -0.81249213
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.3954287
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  ScaleAnimation:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: -2.8119242
-      outSlope: -2.8119242
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.07459859
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: -4.2837043
-      outSlope: -4.2837043
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.060784042
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  AnimationModel: {fileID: 11400000, guid: 5ac10348cb5f7cc4eaa204f75a031dbb, type: 2}
+  FallAnimationModel: {fileID: 11400000, guid: 5e0dc7b199e05bb4684121bda2b66da8, type: 2}
 --- !u!1 &4036639770524374248
 GameObject:
   m_ObjectHideFlags: 0

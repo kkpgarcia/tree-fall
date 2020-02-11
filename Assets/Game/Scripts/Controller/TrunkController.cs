@@ -10,11 +10,8 @@ public class TrunkController : MonoBehaviour {
     private Vector3 m_CurrentReferencePoint;
     
     public void CreateLevel(RoundModel level, UnityAction<Vector3> onLevelGenerated) {
-        //Create Platform
         m_CurrentReferencePoint = m_Ground.GetRandomPoint();
         m_CurrentPlatform = Instantiate(m_TrunkPlatform, m_CurrentReferencePoint, new Quaternion()).GetComponent<Platform>();
-        
-        //Create Trunks
         m_CurrentPlatform.CreateTrunks(level, m_CurrentReferencePoint, onLevelGenerated);
     }
 
@@ -22,13 +19,14 @@ public class TrunkController : MonoBehaviour {
         m_CurrentPlatform.ShowTrunks(m_CurrentReferencePoint);
     }
 
-    public void RemoveNextTrunk(UnityAction onCleared) {
+    public void RemoveNextTrunk(UnityAction<bool> onCleared) {
         if (!m_CurrentPlatform.IsEmpty()) {
             m_CurrentPlatform.RemoveBottomTrunk();
         }
         else {
             Destroy(m_CurrentPlatform.gameObject);
-            onCleared();
         }
+        
+        onCleared(!m_CurrentPlatform.IsEmpty());
     }
 }

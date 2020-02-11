@@ -8,15 +8,10 @@ public class Platform : MonoBehaviour {
     [SerializeField] private GameObject m_TrunkPrefab;
     [SerializeField] private Transform Parent;
     [SerializeField] private int YIncrement = 7;
-    [SerializeField] private AnimationCurve PopupAnimation;
-    [SerializeField] private AnimationCurve ScaleAnimation;
-    private List<Trunk> m_Children;
+    [SerializeField] private AnimationModel AnimationModel;
+    [SerializeField] private AnimationModel FallAnimationModel;
     private int m_CurrHeight;
     
-    private void Awake() {
-        m_Children = new List<Trunk>();
-    }
-
     public void CreateTrunks(RoundModel round, Vector3 referencePoint, UnityAction<Vector3> onLevelGenreated) {
         m_CurrHeight = YIncrement * round.Height;
         Parent.MoveTo(new Vector3(referencePoint.x, round.Height * -YIncrement, referencePoint.z), 0)
@@ -32,8 +27,8 @@ public class Platform : MonoBehaviour {
     }
 
     public void ShowTrunks(Vector3 referencePoint) {
-        Parent.MoveToUsingCurve(referencePoint + new Vector3(0, Mathf.FloorToInt(YIncrement/2), 0), 0.5f, PopupAnimation);
-        Parent.transform.ScaleToUsingCurve(Vector3.one, 0.5f, ScaleAnimation);
+        Parent.MoveToUsingCurve(referencePoint + new Vector3(0, Mathf.FloorToInt(YIncrement/2), 0), AnimationModel.Duration, AnimationModel.Position);
+        Parent.transform.ScaleToUsingCurve(Vector3.one, AnimationModel.Duration, AnimationModel.Scale);
     }
     
     private void CreateTrunk(int posIncrement, Vector3 refPoint) {
@@ -45,13 +40,13 @@ public class Platform : MonoBehaviour {
     }
 
     public void AddTrunk(Trunk trunk) {
-        m_Children.Add(trunk);
         trunk.transform.SetParent(Parent);
     }
 
     public void RemoveBottomTrunk() {
-        m_CurrHeight -= 2;
-        Parent.MoveTo(Parent.transform.position + (Vector3.down * 2), 0.25f);
+       
+        Tweener moveTween = Parent.MoveToUsingCurve(Parent.transform.position + (Vector3.down * 2), FallAnimationModel.Duration, FallAnimationModel.Position);
+        moveTween.CompletedEvent += (s, a) => { m_CurrHeight -= 2; };
     }
 
     public bool IsEmpty() {
