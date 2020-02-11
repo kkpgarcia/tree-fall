@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Projects\PlayX\PlayX Application\Project\treefall" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Game" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Common" t="Include">
+              <e p="Animation" t="Include">
+                <e p="AudioSourceAnimationExtensions.cs" t="Include" />
+                <e p="AudioSourceVolumeTweener.cs" t="Include" />
+                <e p="EasingControl.cs" t="Include" />
+                <e p="EasingEquations.cs" t="Include" />
+                <e p="RectTransformAnchorPositionTweener.cs" t="Include" />
+                <e p="RectTransformAnimationExtensions.cs" t="Include" />
+                <e p="TransformAnimationExtensions.cs" t="Include" />
+                <e p="TransformLocalEulerTweener.cs" t="Include" />
+                <e p="TransformLocalPositionTweener.cs" t="Include" />
+                <e p="TransformPositionTweener.cs" t="Include" />
+                <e p="TransformScaleTweener.cs" t="Include" />
+                <e p="Tweener.cs" t="Include" />
+                <e p="Vector3Tweener.cs" t="Include" />
+              </e>
+              <e p="Notification Center" t="Include">
+                <e p="EventArgs" t="Include">
+                  <e p="InfoEventArgs.cs" t="Include" />
+                </e>
+                <e p="NotificationCenter.cs" t="Include" />
+                <e p="NotificationExtensions.cs" t="Include" />
+              </e>
+              <e p="State Machine" t="Include">
+                <e p="State.cs" t="Include" />
+                <e p="StateMachine.cs" t="Include" />
+              </e>
+              <e p="UI" t="Include">
+                <e p="LayoutAnchor.cs" t="Include" />
+                <e p="Panel.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Controller" t="Include">
+              <e p="GameBootstrap.cs" t="Include" />
+              <e p="States" t="Include">
+                <e p="GameInitializeState.cs" t="Include" />
+                <e p="GameState.cs" t="Include" />
+              </e>
+              <e p="TrunkController.cs" t="Include" />
+            </e>
+            <e p="Model" t="Include">
+              <e p="RoundModel.cs" t="Include" />
+            </e>
+            <e p="View Model" t="Include">
+              <e p="AnimationTester.cs" t="Include" />
+              <e p="ButtonPostNotifier.cs" t="Include" />
+              <e p="CameraRig.cs" t="Include" />
+              <e p="Ground.cs" t="Include" />
+              <e p="Platform.cs" t="Include" />
+              <e p="Trunk.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="treefall.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\hp\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\hp\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_treefall.-911363600.00" t="ExcludeRecursive" />
+  </component>
+</project>
