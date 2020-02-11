@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4023437009306273408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 9.75}
-  m_LocalScale: {x: 10, y: 0.15, z: 10}
+  m_LocalScale: {x: 10, y: 0.5, z: 10}
   m_Children:
   - {fileID: 7787240666269193254}
   m_Father: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_TrunkPrefab: {fileID: 381928599210374406, guid: 2c97061255630fd4c9dacaeaebc4de24,
     type: 3}
   Parent: {fileID: 7787240666269193254}
-  YIncrement: 2
+  YIncrement: 7
   PopupAnimation:
     serializedVersion: 2
     m_Curve:

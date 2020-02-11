@@ -47,6 +47,7 @@
               <e p="TrunkController.cs" t="Include" />
             </e>
             <e p="Model" t="Include">
+              <e p="AnimationModel.cs" t="Include" />
               <e p="RoundModel.cs" t="Include" />
             </e>
             <e p="View Model" t="Include">

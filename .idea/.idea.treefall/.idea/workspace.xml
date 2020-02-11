@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4510ba27-bdfc-4a01-bbf2-58eb724f35d1" name="Default Changelist" comment="" />
+    <list default="true" id="4510ba27-bdfc-4a01-bbf2-58eb724f35d1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Model/AnimationModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Model/AnimationModel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.treefall/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.treefall/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.treefall/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.treefall/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.treefall/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.treefall/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefab/Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefab/Platform.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefab/Trunk.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefab/Trunk.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/View Model/ButtonPostNotifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/View Model/ButtonPostNotifier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/View Model/CameraRig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/View Model/CameraRig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/View Model/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/View Model/Platform.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/Common/Animation/TransformAnimationExtensions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -18,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/View Model/Platform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/Controller/GameBootstrap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/Controller/TrunkController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/Model/AnimationModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/View Model/CameraRig.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/View Model/Ground.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/View Model/Trunk.cs" root0="FORCE_HIGHLIGHTING" />
@@ -39,20 +54,22 @@
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/Model/RoundModel.cs" />
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/Controller/GameBootstrap.cs" />
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/Controller/States/GameState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game/Scripts/View Model/ButtonPostNotifier.cs" />
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/View Model/Trunk.cs" />
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/Common/Animation/TransformAnimationExtensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game/Scripts/View Model/CameraRig.cs" />
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/Common/Animation/TransformPositionTweener.cs" />
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/View Model/Ground.cs" />
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/Common/Animation/TransformScaleTweener.cs" />
-        <option value="$PROJECT_DIR$/Assets/Game/Scripts/View Model/Platform.cs" />
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/Controller/States/GameInitializeState.cs" />
         <option value="$PROJECT_DIR$/Assets/Game/Scripts/Controller/TrunkController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Scripts/View Model/ButtonPostNotifier.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Scripts/Model/AnimationModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Scripts/View Model/Platform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Game/Scripts/View Model/CameraRig.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1XbdkHgNwCmiGRSa1y2dFjNZFkH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
@@ -98,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1581318872735</updated>
       <workItem from="1581318884929" duration="14131000" />
-      <workItem from="1581407466030" duration="8871000" />
+      <workItem from="1581407466030" duration="13468000" />
     </task>
     <servers />
   </component>
@@ -107,6 +124,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>

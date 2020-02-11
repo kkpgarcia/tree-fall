@@ -7,18 +7,18 @@ public class Platform : MonoBehaviour {
 
     [SerializeField] private GameObject m_TrunkPrefab;
     [SerializeField] private Transform Parent;
-    [SerializeField] private int YIncrement = 2;
+    [SerializeField] private int YIncrement = 7;
     [SerializeField] private AnimationCurve PopupAnimation;
     [SerializeField] private AnimationCurve ScaleAnimation;
     private List<Trunk> m_Children;
-    
+    private int m_CurrHeight;
     
     private void Awake() {
         m_Children = new List<Trunk>();
     }
 
     public void CreateTrunks(RoundModel round, Vector3 referencePoint, UnityAction<Vector3> onLevelGenreated) {
-
+        m_CurrHeight = YIncrement * round.Height;
         Parent.MoveTo(new Vector3(referencePoint.x, round.Height * -YIncrement, referencePoint.z), 0)
             .CompletedEvent += (s, a) => {
             
@@ -32,7 +32,7 @@ public class Platform : MonoBehaviour {
     }
 
     public void ShowTrunks(Vector3 referencePoint) {
-        Parent.MoveToUsingCurve(referencePoint, 0.5f, PopupAnimation);
+        Parent.MoveToUsingCurve(referencePoint + new Vector3(0, Mathf.FloorToInt(YIncrement/2), 0), 0.5f, PopupAnimation);
         Parent.transform.ScaleToUsingCurve(Vector3.one, 0.5f, ScaleAnimation);
     }
     
@@ -50,21 +50,11 @@ public class Platform : MonoBehaviour {
     }
 
     public void RemoveBottomTrunk() {
-        if (m_Children.Count == 0)
-            return;
-        
-        for (int i = 1; i < m_Children.Count; i++) {
-            Trunk curr = m_Children[i];
-            curr.Move(m_Children[i - 1].transform.position);
-        }
-
-
-        Trunk bottom = m_Children[0];
-        m_Children.Remove(bottom);
-        Destroy(bottom.gameObject);
+        m_CurrHeight -= 2;
+        Parent.MoveTo(Parent.transform.position + (Vector3.down * 2), 0.25f);
     }
 
     public bool IsEmpty() {
-        return m_Children.Count == 0;
+        return m_CurrHeight <= 1;
     }
 }
