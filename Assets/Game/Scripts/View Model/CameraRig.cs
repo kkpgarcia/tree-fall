@@ -13,6 +13,9 @@ public class CameraRig : MonoBehaviour {
         this.RemoveObserver(OnMove, OnMoveNotification);
     }
 
+    /**
+    * Moves the character to the desired position
+    */
     public void OnMove(object sender, object args) {
         InfoEventArgs<Vector3, UnityAction> info = (InfoEventArgs<Vector3, UnityAction>) args;
         Vector3 target = info.Arg0;

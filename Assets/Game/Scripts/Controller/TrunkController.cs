@@ -9,12 +9,18 @@ public class TrunkController : MonoBehaviour {
 
     private Vector3 m_CurrentReferencePoint;
     
+    /**
+    * Creates the level through a view model compenent class
+    */
     public void CreateLevel(RoundModel level, UnityAction<Vector3> onLevelGenerated) {
         m_CurrentReferencePoint = m_Ground.GetRandomPoint();
         m_CurrentPlatform = Instantiate(m_TrunkPlatform, m_CurrentReferencePoint, new Quaternion()).GetComponent<Platform>();
         m_CurrentPlatform.CreateTrunks(level, m_CurrentReferencePoint, onLevelGenerated);
     }
 
+    /**
+    * Shows the trunk of the level
+    */
     public void ShowLevel() {
         m_CurrentPlatform.ShowTrunks(m_CurrentReferencePoint);
     }

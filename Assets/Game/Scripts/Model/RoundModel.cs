@@ -1,5 +1,3 @@
-﻿using UnityEngine;
-
-public class RoundModel : ScriptableObject {
+﻿public class RoundModel {
     public int Height;
 }

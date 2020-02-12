@@ -11,6 +11,10 @@ public class Ground : MonoBehaviour {
         m_Max = m_GroundMesh.bounds.max * this.transform.localScale.x / 2;
     }
 
+    /**
+    * Generates a random point on the ground for the instantiation
+    * of the trunks
+    */
     public Vector3 GetRandomPoint() {
         return new Vector3(
             Random.Range(m_Min.x, m_Max.x),
