@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Runtime.InteropServices;
 
 public class ButtonPostNotifier : MonoBehaviour {
+    
     public string Notification;
     private Button m_Button;
 
@@ -14,7 +16,7 @@ public class ButtonPostNotifier : MonoBehaviour {
         m_Button.onClick.RemoveListener(OnNotify);
     }
 
-    private void OnNotify() {
+    public void OnNotify() {
         this.PostNotification(Notification);
     }
 }
