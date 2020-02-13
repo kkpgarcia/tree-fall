@@ -53,7 +53,6 @@
               <e p="RoundModel.cs" t="Include" />
             </e>
             <e p="View Model" t="Include">
-              <e p="AnimationTester.cs" t="Include" />
               <e p="ButtonPostNotifier.cs" t="Include" />
               <e p="CameraRig.cs" t="Include" />
               <e p="Ground.cs" t="Include" />

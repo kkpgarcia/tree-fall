@@ -9,7 +9,12 @@ public class ButtonPostNotifier : MonoBehaviour {
 
     private void Awake() {
         m_Button = GetComponent<Button>();
+        #if UNITY_IOS
+        m_Button.enabled = false;
+        GetComponent<Image>().enabled = false;
+        #else
         m_Button.onClick.AddListener(OnNotify);
+        #endif
     }
 
     private void OnDestroy() {

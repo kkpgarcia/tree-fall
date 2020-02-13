@@ -27,7 +27,7 @@ extern void UnitySendMessage(const char* obj, const char* method, const char* ms
     [vc.view addSubview:uview];
     
     btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    [btn setTitle:@"To Unity" forState:UIControlStateNormal];
+    [btn setTitle:@"Interact" forState:UIControlStateNormal];
     [btn setBackgroundColor:[UIColor whiteColor]];
     [btn setTintColor:[UIColor orangeColor]];
     
